@@ -11,6 +11,9 @@ Project using JavaScript ES6, ReactJS, Webpack, Foundation
 // Notes for future changes featuring new features
 
 ~~1. Deploy App to production - Heroku~~
+
 ~~2. Style App with Foundation~~
+
 3. Add more data feature
+
 4. Add testing and component lifecycle
