@@ -10,8 +10,8 @@ var WeatherMessage = React.createClass({
         </div>
         <div className="card-section">
           <h3>Current Temp: {temp}&deg;F</h3>
-          {/* <h3>Pressure: {pressure}</h3>
-          <h3>Humidity: {humidity}</h3> */}
+          <h3>Pressure: {pressure}</h3>
+          <h3>Humidity: {humidity}</h3>
         </div>
       </div>
     )
