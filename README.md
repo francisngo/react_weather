@@ -7,13 +7,3 @@ Simple Weather Application with React and OpenWeatherAPI following [The Complete
 Project using JavaScript ES6, ReactJS, Webpack, Foundation
 
 ---
-
-// Notes for future changes featuring new features
-
-~~- Deploy App to production - Heroku~~
-
-~~- Style App with Foundation~~
-
-- Add more data feature
-
-- Add testing and component lifecycle
