@@ -19,14 +19,24 @@ var Weather = React.createClass({
       errorMessage: undefined,
       location: undefined,
       temp: undefined,
+      temp_min: undefined,
+      temp_max: undefined,
       pressure: undefined,
-      humidity: undefined
+      humidity: undefined,
+      wind: undefined,
+      wind_deg: undefined
     });
 
-    openWeatherMap.getTemp(location).then(function (temp) {
+    openWeatherMap.getTemp(location).then(function (weather) {
       that.setState({
         location: location,
-        temp: Math.floor(temp),
+        temp: Math.floor(weather.temp),
+        temp_min: Math.floor(weather.temp_min),
+        temp_max: Math.floor(weather.temp_max),
+        pressure: weather.pressure,
+        humidity: weather.humidity,
+        wind: Math.floor(weather.wind),
+        wind_deg: Math.floor(weather.wind_deg),
         isLoading: false
       });
     }, function (e) {
@@ -53,13 +63,22 @@ var Weather = React.createClass({
     }
   },
   render: function () {
-    var { isLoading, temp, location, pressure, humidity, errorMessage } = this.state;
+    var { isLoading, temp, temp_min, temp_max, location, pressure, humidity, wind, wind_deg, errorMessage } = this.state;
 
     function renderMessage () {
       if (isLoading) {
         return <h3 className="text-center">Fetching weather...</h3>;
       } else if (temp && location) {
-        return <WeatherMessage temp={temp} location={location} pressure={pressure} humidity={humidity} />;
+        return <WeatherMessage
+          temp={temp}
+          temp_min={temp_min}
+          temp_max={temp_max}
+          location={location}
+          pressure={pressure}
+          humidity={humidity}
+          wind={wind}
+          wind_deg={wind_deg}
+        />;
       }
     }
 
@@ -73,7 +92,7 @@ var Weather = React.createClass({
 
     return (
       <div>
-        <h1 className="text-center page-title">Get Weather</h1>
+        <h1 className="text-center page-title">Get Today's Weather</h1>
         <WeatherForm onSearch={this.handleSearch}/>
         {renderMessage()}
         {renderError()}

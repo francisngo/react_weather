@@ -14,8 +14,12 @@ module.exports = {
       } else {
         return {
           temp: res.data.main.temp,
+          temp_min: res.data.main.temp_min,
+          temp_max: res.data.main.temp_max,
           pressure: res.data.main.pressure,
-          humidity: res.data.main.humidity
+          humidity: res.data.main.humidity,
+          wind: res.data.wind.speed,
+          wind_deg: res.data.wind.deg
         };
       }
     }, function (res) {

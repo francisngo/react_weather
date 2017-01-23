@@ -1,4 +1,21 @@
 $space-large: 2.5rem;
+$font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+* {
+  font-family: $font;
+}
+
+a {
+  color: #074e68;
+}
+
+.button {
+  background-color: #074e68;
+}
+
+h1, h3, button, input[type=submit] {
+  font-family: $font;
+}
 
 .page-title {
   margin-top: $space-large;
