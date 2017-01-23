@@ -6,11 +6,19 @@ $font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 a {
-  color: #074e68;
+  color: skyblue;
 }
 
-.button {
-  background-color: #074e68;
+a:focus, a:hover {
+  color: #1468a0;
+}
+
+.top-bar, .top-bar ul {
+  background-color: skyblue
+}
+
+.menu-text, .menu>li>a {
+  color: #fff;
 }
 
 h1, h3, button, input[type=submit] {
@@ -22,6 +30,30 @@ h1, h3, button, input[type=submit] {
   margin-bottom: $space-large;
 }
 
+.card-divider {
+  background: skyblue;
+}
+
 input[type=search] {
   box-shadow: none;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: skyblue;
+  text-align: center;
+  height: 75px;
+  padding: 10px;
+}
+
+.footer p, .footer a {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.menu>li>a:hover, .footer a:hover {
+  color: #1468a0;
 }
