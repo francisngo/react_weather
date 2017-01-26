@@ -1,0 +1,18 @@
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  height: 75px;
+  padding: 10px;
+}
+
+.footer p, .footer a {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.menu>li>a:hover, .footer a:hover {
+  color: #1468a0;
+}

@@ -1,0 +1,31 @@
+* {
+  font-family: $font;
+}
+
+body {
+  background-image: url('../../public/img/bg.png');
+}
+
+a {
+  color: skyblue;
+}
+
+a:focus, a:hover {
+  color: #1468a0;
+}
+
+h1, h3, button, input[type=submit] {
+  font-family: $font;
+}
+
+.topmargin {
+  margin-top: 5rem;
+}
+
+.page-title {
+  margin-bottom: $space-large;
+}
+
+input[type=search] {
+  box-shadow: none;
+}

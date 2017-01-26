@@ -22,17 +22,17 @@ module.exports = {
   resolve: {
     root: __dirname,
     alias: {
-        Main: 'app/components/Main.jsx',
-        Nav: 'app/components/Nav.jsx',
-        Footer: 'app/components/Footer.jsx',
-        Weather: 'app/components/Weather.jsx',
-        WeatherForm: 'app/components/WeatherForm.jsx',
-        WeatherMessage: 'app/components/WeatherMessage.jsx',
-        About: 'app/components/About.jsx',
-        Examples: 'app/components/Examples.jsx',
-        openWeatherMap: 'app/actions/openWeatherMap.jsx',
-        ErrorModal: 'app/components/ErrorModal.jsx',
-        applicationStyles: 'app/styles/styles.scss'
+      Main: 'app/components/Main.jsx',
+      Nav: 'app/components/Nav.jsx',
+      Footer: 'app/components/Footer.jsx',
+      Weather: 'app/components/Weather.jsx',
+      WeatherForm: 'app/components/WeatherForm.jsx',
+      WeatherMessage: 'app/components/WeatherMessage.jsx',
+      About: 'app/components/About.jsx',
+      Examples: 'app/components/Examples.jsx',
+      openWeatherMap: 'app/actions/openWeatherMap.jsx',
+      ErrorModal: 'app/components/ErrorModal.jsx',
+      applicationStyles: 'app/styles/styles.scss'
     },
     extensions: ['', '.js', '.jsx']
   },
@@ -45,6 +45,10 @@ module.exports = {
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
       }
     ]
   },
