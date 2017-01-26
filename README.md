@@ -1,6 +1,7 @@
 # The WeatherCast
 
 A simple weather application built with ReactJS and OpenWeatherAPI. [See it in action](http://reactweathercast.herokuapp.com/).
+
 Followed [The Complete React Web App Developer Course](https://www.udemy.com/the-complete-react-web-app-developer-course/) on Udemy.
 
 ## What is this?
